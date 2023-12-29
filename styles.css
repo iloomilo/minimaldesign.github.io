@@ -65,7 +65,7 @@ section {
 
 
 .landing-page {
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url(img/neom-ud9NlvvEzUI-unsplash.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url("./img/neom-ud9NlvvEzUI-unsplash\(3\).jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
