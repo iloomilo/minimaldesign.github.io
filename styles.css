@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    font-size: clamp(60%, 2.5vw, 100%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    min-height: 8vh;
+    padding-inline: 3rem;
+    font-weight: 500;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+ul > a > li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+ul > a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+ul > a::after {
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    background-color: black;
+    width: 0%;
+    height: 1.5px;
+    transition: all 0.3s ease;
+}
+
+ul > a:hover::after {
+    width: 100%;
+}
+section {
+    padding: 10rem 20vw;
+}
+
+
+.landing-page {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)), url(img/neom-ud9NlvvEzUI-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    color: white;
+    min-height: 92vh;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.heading-container {
+    max-width: 700px;
+    margin-bottom: 5rem;
+}
+
+.heading-container > h1 {
+    font-size: 4rem;
+    letter-spacing: -0.05em;
+    line-height: 1.2em;
+    margin-bottom: 0.4rem;
+                                                                                                                         
+}
+
+.heading-container > p {
+    font-size: 1.3rem;
+    line-height: 1.3em;
+    opacity: 0.8;
+}
+
+.heading-wrapper > p {
+    font-size: 1.2rem;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.articles > article {
+    max-width: 300px;
+}
+
+.articles > article > h2 {
+    letter-spacing: -0.05em;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+}
+
+.articles > article > p {
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.020em;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.articles > article > button {
+  padding: 1rem 1.3rem;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.articles > article > button:hover {
+    background-color: rgba(0, 0, 0, 0.867);
+    cursor: pointer;
+}
+
+.brand-section {
+    background: black;
+    color: white;
+}
+
+.brand-list {
+    display: flex; 
+    justify-content: space-between;
+    
+}
+
+@media(max-width:768px) {
+    .brand-list {
+        flex-direction: column;
+    }
+    #companys > .brand-list > img {
+        width: 70%;
+        margin-inline: auto;
+        filter: grayscale(1) invert(1);
+        aspect-ratio: 20/9;
+    }
+}
+
+.brand-list > img {
+    width: 16.66%;
+    filter: grayscale(1) invert(1);
+    aspect-ratio: 20/9;
+
+}
+
+.blog-section img {
+  aspect-ratio: 16/9;
+  width: 100%;
+  filter: grayscale(1);
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+
+.blog-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+@media(max-width:1000px) {
+    .blog-list {
+        grid-template-columns: 1fr;
+    }
+}
+.blog-item > h2 {
+    font-size: 1.5rem;
+    letter-spacing: -0.014em;
+    line-height: 1.2em;
+    text-transform: uppercase;
+}
+
+.blog-item:hover {
+    color: rgba(0, 0, 0, 0.675);
+    cursor: pointer;
+}
+
+.blog-item > span {
+    font-size: 1rem;
+    letter-spacing: -0.014em;
+    line-height: 1.2em;
+    opacity: 0.85;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 1.8rem;
+    width: 100%;
+    margin-top: auto;
+
+}
+footer > .footer-content > p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+footer a:hover {
+    color: lightgrey;
+}
+
